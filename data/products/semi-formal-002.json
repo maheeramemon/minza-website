@@ -1,0 +1,18 @@
+{
+  "id": "semi-formal-002",
+  "name": "Kaftan",
+  "category": "semi-formal",
+  "description": "A kaftan crafted in pure raw silk, adorned with thread embroidery and hand-embellishments throughout the shirt, hem, and neckline. Quiet luxury rendered in fluid silhouette. For the woman who lets the fabric speak.",
+  "fabricNotes": "Pure raw silk with thread embroidery and hand-embellishments at the shirt, hem, and neckline.",
+  "customizations": ["Color", "Embroidery placement", "Embellishment density", "Length"],
+  "turnaroundDays": "6–10 weeks",
+  "images": [
+    "/images/products/semi-formal-002/semi-formal-002-main.jpg",
+    "/images/products/semi-formal-002/semi-formal-002-detail-01.jpg"
+  ],
+  "featured": true,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

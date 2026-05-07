@@ -1,0 +1,15 @@
+{
+  "id": "bridal-003",
+  "name": "Champagne Anarkali",
+  "category": "bridal",
+  "description": "A floor-skimming anarkali in champagne silk, finished with a softly flared hem and crystal-touched neckline.",
+  "fabricNotes": "Heavy silk with hand-set crystal and pearl detailing; tulle inner lining for movement.",
+  "customizations": ["Color", "Hem length", "Neckline"],
+  "turnaroundDays": "8–10 weeks",
+  "images": ["/images/placeholder.svg"],
+  "featured": false,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

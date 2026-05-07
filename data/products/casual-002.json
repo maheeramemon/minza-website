@@ -1,0 +1,15 @@
+{
+  "id": "casual-002",
+  "name": "Block-Print Kaftan",
+  "category": "casual",
+  "description": "A loose-cut kaftan in hand block-printed cotton, finished with a tasselled tie at the waist.",
+  "fabricNotes": "Hand block-printed cotton voile; raw-silk tassels.",
+  "customizations": ["Print", "Length"],
+  "turnaroundDays": "3–4 weeks",
+  "images": ["/images/placeholder.svg"],
+  "featured": false,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

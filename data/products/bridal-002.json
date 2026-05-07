@@ -1,0 +1,15 @@
+{
+  "id": "bridal-002",
+  "name": "Rose Gold Sharara Set",
+  "category": "bridal",
+  "description": "A blush sharara with antique gold tilla embroidery, paired with a fitted peplum kurta. Heirloom-feeling pieces for the second-day bride.",
+  "fabricNotes": "Pure silk with hand tilla and dabka work; organza dupatta with hand-finished edges.",
+  "customizations": ["Color", "Embroidery palette", "Sleeve length"],
+  "turnaroundDays": "10–12 weeks",
+  "images": ["/images/placeholder.svg", "/images/placeholder.svg"],
+  "featured": true,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

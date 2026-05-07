@@ -1,0 +1,19 @@
+{
+  "id": "formal-002",
+  "name": "Ivory Draped Lehenga",
+  "category": "formal",
+  "description": "An ivory draped lehenga — a reimagining of the sari in cascading folds and sculpted precision. The structured blouse, finished with delicate embroidery, contrasts the effortless grace of the drape. For the woman who moves with quiet confidence.",
+  "fabricNotes": "Satin.",
+  "customizations": ["Color", "Embroidery placement", "Blouse silhouette"],
+  "turnaroundDays": "8–12 weeks",
+  "images": [
+    "/images/products/formal-002/formal-002-main.jpg",
+    "/images/products/formal-002/formal-002-detail-01.jpg",
+    "/images/products/formal-002/formal-002-detail-02.jpg"
+  ],
+  "featured": true,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

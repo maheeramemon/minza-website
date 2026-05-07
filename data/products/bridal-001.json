@@ -1,0 +1,19 @@
+{
+  "id": "bridal-001",
+  "name": "Emerald Lehenga",
+  "category": "bridal",
+  "description": "A lehenga in deep emerald, crafted in-house and adorned with heavy gota work, intricate hand-embroidery, and delicate botis throughout. Heritage rendered in modern silhouette. For the bride who carries her own legacy.",
+  "fabricNotes": "Crafted in-house with heavy hand-done gota work, intricate embroidery, and botis across the lehenga, choli, and dupatta.",
+  "customizations": ["Color", "Gota density and placement", "Embroidery placement", "Length", "Choli silhouette"],
+  "turnaroundDays": "12–16 weeks",
+  "images": [
+    "/images/products/bridal-001/bridal-001-main.jpg",
+    "/images/products/bridal-001/bridal-001-detail-01.jpg",
+    "/images/products/bridal-001/bridal-001-detail-02.jpg"
+  ],
+  "featured": true,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

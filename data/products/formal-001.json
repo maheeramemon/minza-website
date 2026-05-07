@@ -1,0 +1,19 @@
+{
+  "id": "formal-001",
+  "name": "Marigold Kameez & Izhar",
+  "category": "formal",
+  "description": "A long kameez in warm marigold — hand-embroidered with zardozi and resham, paired with izhar and a heavily worked dupatta. Traditional in silhouette, considered in craft. Made for the moments that matter.",
+  "fabricNotes": "Hand-work zardozi and resham embroidery across the kameez, izhar pants and dupatta.",
+  "customizations": ["Color", "Embroidery density and motif", "Kameez length", "Dupatta finishing"],
+  "turnaroundDays": "8–12 weeks",
+  "images": [
+    "/images/products/formal-001/formal-001-main.jpg",
+    "/images/products/formal-001/formal-001-detail-01.jpg",
+    "/images/products/formal-001/formal-001-detail-02.jpg"
+  ],
+  "featured": true,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

@@ -1,0 +1,15 @@
+{
+  "id": "casual-001",
+  "name": "Linen Tunic in Cream",
+  "category": "casual",
+  "description": "An everyday tunic in soft cream linen with hand-stitched detailing at the placket. Designed to be worn with the brand's signature ease.",
+  "fabricNotes": "Pure linen, pre-washed for softness; mother-of-pearl buttons.",
+  "customizations": ["Color", "Button finish"],
+  "turnaroundDays": "3–4 weeks",
+  "images": ["/images/placeholder.svg"],
+  "featured": false,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}
