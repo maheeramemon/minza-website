@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Hero } from "@/components/Hero";
 import { CategoryGrid } from "@/components/CategoryGrid";
 import { ProductCard } from "@/components/ProductCard";
+import { FlagshipCard } from "@/components/FlagshipCard";
 import { getFeaturedProducts } from "@/lib/products";
 import instagramFeed from "@/../data/instagram.json";
 
@@ -13,7 +14,9 @@ interface InstagramTile {
 const INSTAGRAM_TILES = instagramFeed as InstagramTile[];
 
 export default function Home() {
-  const featured = getFeaturedProducts().slice(0, 6);
+  const allFeatured = getFeaturedProducts();
+  const flagship = allFeatured.find((p) => p.flagship);
+  const featured = allFeatured.filter((p) => p.id !== flagship?.id).slice(0, 6);
 
   return (
     <>
@@ -35,8 +38,8 @@ export default function Home() {
         </section>
       </div>
 
-      {featured.length > 0 && (
-        <section className="mx-auto max-w-7xl px-6 pb-24 md:px-10">
+      {(flagship || featured.length > 0) && (
+        <section className="mx-auto max-w-7xl px-6 pt-24 pb-24 md:px-10 md:pt-40">
           <div className="mb-12 flex items-end justify-between">
             <div>
               <p className="text-sm uppercase tracking-[0.3em] text-muted">Featured</p>
@@ -46,6 +49,13 @@ export default function Home() {
               View all →
             </Link>
           </div>
+
+          {flagship && (
+            <div className="mb-20 md:mb-28">
+              <FlagshipCard product={flagship} />
+            </div>
+          )}
+
           <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {featured.map((p) => <ProductCard key={p.id} product={p} />)}
           </div>

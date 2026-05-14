@@ -16,7 +16,7 @@ const ROOT = path.resolve(__dirname, "..");
 const PRODUCTS_DIR = path.join(ROOT, "data", "products");
 const CSV = path.join(ROOT, "data", "catalog.csv");
 const HEADERS = [
-  "Slug", "Name", "Category", "Description", "Fabric",
+  "Slug", "Name", "Subtitle", "Category", "Description", "Fabric",
   "Customizations", "Turnaround", "Featured", "Photo Folder", "Date Added",
 ];
 const HEADER_LINE = HEADERS.join(",") + "\n";
@@ -66,6 +66,7 @@ function buildFields(product, dateAdded) {
   return [
     product.id,
     product.name ?? "",
+    product.subtitle ?? "",
     product.category ?? "",
     product.description ?? "",
     product.fabricNotes ?? "",
@@ -102,7 +103,10 @@ function upsert(jsonPath) {
 
   const { rows } = readCsvSnapshot();
   const idx = rows.findIndex((r) => r[0] === product.id);
-  const dateAdded = idx >= 0 ? rows[idx][9] || today() : today();
+  // Date Added is always the last column; compute index from current header
+  // length so adding columns doesn't break the lookup.
+  const dateCol = HEADERS.length - 1;
+  const dateAdded = idx >= 0 ? rows[idx][dateCol] || today() : today();
   const fields = buildFields(product, dateAdded);
 
   if (idx >= 0) rows[idx] = fields;
@@ -115,8 +119,14 @@ function upsert(jsonPath) {
 function rebuild() {
   const existingDates = new Map();
   if (fs.existsSync(CSV)) {
+    // Read date from the LAST column of each existing row (works whether the
+    // file's header matches the current HEADERS or is a shorter older schema —
+    // Date Added is always the rightmost column).
     for (const r of readCsvSnapshot().rows) {
-      if (r[0] && r[9]) existingDates.set(r[0], r[9]);
+      const lastVal = r[r.length - 1];
+      if (r[0] && lastVal && /^\d{4}-\d{2}-\d{2}$/.test(lastVal)) {
+        existingDates.set(r[0], lastVal);
+      }
     }
   }
 

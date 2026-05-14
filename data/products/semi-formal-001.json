@@ -5,12 +5,12 @@
   "description": "A short shirt in soft rose, embroidered and hand-embellished with sequins and beadwork — paired with traditional Dhaka pants. Delicate craft, considered restraint. For the woman who knows that elegance is in the detail.",
   "fabricNotes": "Embroidery, sequins, and hand-set beadwork on the short shirt. Traditional Dhaka pants.",
   "customizations": ["Color", "Embroidery placement", "Embellishment density", "Shirt length"],
-  "turnaroundDays": "6–10 weeks",
+  "turnaroundDays": "2 weeks",
   "images": [
     "/images/products/semi-formal-001/semi-formal-001-main.jpg",
     "/images/products/semi-formal-001/semi-formal-001-detail-01.jpg"
   ],
-  "featured": true,
+  "featured": false,
   "price": null,
   "sku": null,
   "inStock": true,

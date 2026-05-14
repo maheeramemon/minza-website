@@ -1,0 +1,19 @@
+{
+  "id": "formal-004",
+  "name": "Wisteria",
+  "category": "formal",
+  "description": "A silk sarong in soft lilac, paired with a pleated blouse and short coat. Finished throughout with handwork.",
+  "fabricNotes": "Silk sarong, pleated blouse, short coat — finished throughout with handwork.",
+  "customizations": ["Color", "Handwork placement", "Coat length", "Blouse silhouette"],
+  "turnaroundDays": "3–4 weeks",
+  "images": [
+    "/images/products/formal-004/formal-004-main.jpg",
+    "/images/products/formal-004/formal-004-detail-01.jpg",
+    "/images/products/formal-004/formal-004-detail-02.jpg"
+  ],
+  "featured": false,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

@@ -1,22 +1,52 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CATEGORIES } from "@/types/product";
+
+const HIDE_THRESHOLD = 120; // don't hide until scrolled past the header itself
+const DELTA_THRESHOLD = 6;  // ignore tiny scroll jitters
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const lastY = useRef(0);
+  const ticking = useRef(false);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+  }, [open]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const onScroll = () => {
+      if (ticking.current) return;
+      ticking.current = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        setScrolled(y > 20);
+
+        if (!reduce) {
+          const delta = y - lastY.current;
+          if (y < HIDE_THRESHOLD) {
+            setHidden(false);
+          } else if (Math.abs(delta) > DELTA_THRESHOLD) {
+            setHidden(delta > 0);
+          }
+        }
+        if (open) setHidden(false);
+
+        lastY.current = y;
+        ticking.current = false;
+      });
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, [open]);
 
   const navLink =
@@ -24,8 +54,12 @@ export function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 transition-colors duration-300 ${
+      className={`fixed inset-x-0 top-0 z-40 transition-[transform,opacity,filter,background-color] duration-[220ms] ease-out will-change-transform motion-reduce:transition-none ${
         scrolled || open ? "bg-cream/95 backdrop-blur border-b border-beige" : "bg-transparent"
+      } ${
+        hidden
+          ? "-translate-y-full opacity-0 blur-[3px] motion-reduce:translate-y-0 motion-reduce:opacity-100 motion-reduce:blur-none"
+          : "translate-y-0 opacity-100 blur-0"
       }`}
     >
       <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-center px-6 md:h-20 md:px-10">

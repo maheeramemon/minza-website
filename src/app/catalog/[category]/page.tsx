@@ -8,8 +8,8 @@ import { CATEGORIES, type Category } from "@/types/product";
 const CATEGORY_INTRO: Record<Category, string> = {
   casual: "Quiet pieces for the everyday — softened fabrics, considered cuts.",
   "semi-formal": "Light formality. Designed for daytime gatherings and intimate occasions.",
-  formal: "Evening pieces with depth — built for the moment.",
-  bridal: "The defining piece. Heirloom craft, made to your measure.",
+  formal: "Evening pieces with depth — crafted for the occasion.",
+  bridal: "The defining piece. Made to be worn with love today and remembered with love forever.",
 };
 
 const isCategory = (s: string): s is Category =>

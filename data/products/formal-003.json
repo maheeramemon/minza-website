@@ -1,0 +1,18 @@
+{
+  "id": "formal-003",
+  "name": "Noir",
+  "category": "formal",
+  "description": "A draped lehenga in deep black, finished with delicate ivory embroidery. Fluid silhouette, statement craft.",
+  "fabricNotes": "Delicate ivory embroidery on a draped silhouette.",
+  "customizations": ["Color", "Embroidery placement", "Drape length", "Blouse silhouette"],
+  "turnaroundDays": "3–4 weeks",
+  "images": [
+    "/images/products/formal-003/formal-003-main.jpg",
+    "/images/products/formal-003/formal-003-detail-01.jpg"
+  ],
+  "featured": false,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

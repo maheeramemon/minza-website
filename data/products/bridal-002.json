@@ -1,13 +1,27 @@
 {
   "id": "bridal-002",
-  "name": "Rose Gold Sharara Set",
+  "name": "Gulnar",
+  "subtitle": "The Heirloom",
   "category": "bridal",
-  "description": "A blush sharara with antique gold tilla embroidery, paired with a fitted peplum kurta. Heirloom-feeling pieces for the second-day bride.",
-  "fabricNotes": "Pure silk with hand tilla and dabka work; organza dupatta with hand-finished edges.",
-  "customizations": ["Color", "Embroidery palette", "Sleeve length"],
-  "turnaroundDays": "10–12 weeks",
-  "images": ["/images/placeholder.svg", "/images/placeholder.svg"],
+  "description": "A bridal long shirt in deep crimson, paired with a two-legged sharara and dupatta. Hand-worked throughout in resham, dabka, zardozi, cut dana, and sitare. Accompanied by a single tanka resham shawl, fully hand-embroidered — available separately. Designed today but destined to become an everlasting heirloom for you and your loved ones.",
+  "fabricNotes": "Crafted in-house. Long shirt + two-legged sharara + dupatta. Hand-work techniques include resham, dabka, zardozi, cut dana, and sitare. Companion piece: single tanka resham shawl, fully hand-embroidered, available together or separately.",
+  "customizations": [
+    "Color",
+    "Embroidery placement",
+    "Hand-work density",
+    "Long shirt length",
+    "Sharara silhouette",
+    "Shawl availability"
+  ],
+  "turnaroundDays": "7–8 months",
+  "images": [
+    "/images/products/bridal-002/bridal-002-main.jpg",
+    "/images/products/bridal-002/bridal-002-detail-01.jpg",
+    "/images/products/bridal-002/bridal-002-detail-02.jpg"
+  ],
   "featured": true,
+  "flagship": true,
+  "companions": null,
   "price": null,
   "sku": null,
   "inStock": true,

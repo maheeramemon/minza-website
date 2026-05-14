@@ -1,0 +1,17 @@
+{
+  "id": "semi-formal-003",
+  "name": "Midnight",
+  "category": "semi-formal",
+  "description": "A kaftan in deep midnight, embroidered in threadwork and finished with hand-embellishments. Fluid silhouette, considered craft.",
+  "fabricNotes": "Thread embroidery and hand-embellishments throughout.",
+  "customizations": ["Color", "Embroidery placement", "Embellishment density", "Length"],
+  "turnaroundDays": "2–4 weeks",
+  "images": [
+    "/images/products/semi-formal-003/semi-formal-003-main.jpg"
+  ],
+  "featured": false,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

@@ -76,6 +76,11 @@ export default async function ProductPage({
           <div className="lg:pt-6">
             <p className="text-sm uppercase tracking-[0.3em] text-muted">{categoryLabel}</p>
             <h1 className="mt-3 font-serif text-4xl md:text-5xl">{product.name}</h1>
+            {product.subtitle && (
+              <p className="mt-3 font-serif text-lg italic text-charcoal/65 md:text-xl">
+                {product.subtitle}
+              </p>
+            )}
 
             <p className="mt-8 leading-relaxed text-charcoal/85">{product.description}</p>
 
