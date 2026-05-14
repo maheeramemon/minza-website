@@ -8,20 +8,11 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [75, 90],
   },
-  async redirects() {
-    return [
-      {
-        // Canonical host is the apex (minzabynj.com). Anything hitting the
-        // www subdomain is 308'd to the same path on apex. Vercel's primary-
-        // domain setting handles this at the edge too; this is a defense-in-
-        // depth declaration that keeps Next.js authoritative.
-        source: "/:path*",
-        has: [{ type: "host", value: "www.minzabynj.com" }],
-        destination: "https://minzabynj.com/:path*",
-        permanent: true,
-      },
-    ];
-  },
+  // Note on canonical host: the apex (minzabynj.com) is canonical per
+  // metadata.alternates.canonical in src/app/layout.tsx. The www→apex
+  // (or apex→www) redirect is handled by Vercel's primary-domain setting,
+  // NOT by Next.js — putting a redirect here while Vercel still treats www
+  // as primary causes a loop.
 };
 
 export default nextConfig;
