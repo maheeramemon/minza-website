@@ -37,9 +37,12 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Minza By Nazia Junaid" },
-  // Soft launch — site is live but not indexed by search engines until full collection is published.
-  // Remove these two flags (or set both to true) when ready for the public launch.
-  robots: { index: false, follow: false },
+  alternates: { canonical: "https://minzabynj.com" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
 export default function RootLayout({
