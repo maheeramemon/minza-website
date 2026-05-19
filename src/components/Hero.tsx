@@ -35,8 +35,8 @@ export function Hero() {
         <Image
           src="/minza-logo.png"
           alt="Minza By Nazia Junaid"
-          width={408}
-          height={612}
+          width={180}
+          height={240}
           priority
           quality={90}
           className="h-[600px] w-auto md:h-[760px] lg:h-[880px]"

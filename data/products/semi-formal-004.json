@@ -1,0 +1,22 @@
+{
+  "id": "semi-formal-004",
+  "name": "Eden",
+  "subtitle": null,
+  "category": "semi-formal",
+  "description": "A modern piece in magenta, paired with fluid pants and adorned with silver pitta work. Modern in silhouette. Rooted in craft.",
+  "fabricNotes": "Silver pitta work throughout. Paired with fluid pants.",
+  "customizations": ["Color", "Pitta work placement", "Length", "Pants silhouette"],
+  "turnaroundDays": "3–4 weeks",
+  "images": [
+    "/images/products/semi-formal-004/semi-formal-004-main.jpg",
+    "/images/products/semi-formal-004/semi-formal-004-detail-01.jpg",
+    "/images/products/semi-formal-004/semi-formal-004-detail-02.jpg"
+  ],
+  "featured": false,
+  "flagship": false,
+  "companions": null,
+  "price": null,
+  "sku": null,
+  "inStock": true,
+  "variants": null
+}

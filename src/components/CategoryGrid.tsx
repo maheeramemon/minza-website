@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CATS = [
-  { slug: "casual", label: "Casual", caption: "Everyday ease." },
-  { slug: "semi-formal", label: "Semi-Formal", caption: "Daytime gatherings." },
-  { slug: "formal", label: "Formal", caption: "Evening occasions." },
-  { slug: "bridal", label: "Bridal", caption: "The defining piece." },
+  { slug: "casual", label: "Casual", caption: "Everyday ease.", image: "/images/products/casual-002/casual-002-main.jpg" },
+  { slug: "semi-formal", label: "Semi-Formal", caption: "Daytime gatherings.", image: "/images/products/semi-formal-004/semi-formal-004-main.jpg" },
+  { slug: "formal", label: "Formal", caption: "Evening occasions.", image: "/images/products/formal-003/formal-003-main.jpg" },
+  { slug: "bridal", label: "Bridal", caption: "The defining piece.", image: "/images/products/bridal-002/bridal-002-main.jpg" },
 ] as const;
 
 export function CategoryGrid() {
@@ -18,7 +18,7 @@ export function CategoryGrid() {
           className="group relative block aspect-[3/4] overflow-hidden bg-beige/40"
         >
           <Image
-            src="/images/placeholder.svg"
+            src={c.image}
             alt=""
             fill
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"

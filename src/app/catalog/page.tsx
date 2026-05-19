@@ -46,7 +46,7 @@ function FilterChip({ href, label, active = false }: { href: string; label: stri
       href={href}
       className={`border px-5 py-2 text-sm uppercase tracking-[0.18em] transition-colors ${
         active
-          ? "border-charcoal bg-charcoal text-cream"
+          ? "border-sage-deep bg-sage-deep text-cream"
           : "border-beige text-charcoal hover:border-sage-deep hover:text-sage-deep"
       }`}
     >
