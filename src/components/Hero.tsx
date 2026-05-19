@@ -39,7 +39,7 @@ export function Hero() {
           height={240}
           priority
           quality={90}
-          className="h-[600px] w-auto md:h-[760px] lg:h-[880px]"
+          className="h-[240px] w-auto md:h-[300px] lg:h-[360px]"
         />
       </div>
     </section>
