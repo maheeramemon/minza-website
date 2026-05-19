@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Logo } from "./Logo";
 
 export function Footer() {
   return (
@@ -8,13 +8,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div>
             <Link href="/" aria-label="Minza By Nazia Junaid — home" className="block">
-              <Image
-                src="/minza-logo.png"
-                alt="Minza By Nazia Junaid"
-                width={180}
-                height={240}
-                className="h-36 w-auto md:h-40"
-              />
+              <Logo className="h-36 w-auto text-charcoal md:h-40" />
             </Link>
             <p className="mt-6 max-w-xs text-sm text-muted">
               Bespoke Pakistani couture, hand-crafted in Karachi and shipped worldwide.

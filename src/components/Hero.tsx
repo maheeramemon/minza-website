@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { Logo } from "./Logo";
 
 export function Hero() {
   const innerRef = useRef<HTMLDivElement>(null);
@@ -32,15 +32,7 @@ export function Hero() {
   return (
     <section className="relative flex min-h-[calc(100vh-5rem)] w-full flex-col items-center justify-center overflow-hidden bg-sage px-6 py-12 text-center">
       <div ref={innerRef} className="will-change-transform">
-        <Image
-          src="/minza-logo.png"
-          alt="Minza By Nazia Junaid"
-          width={180}
-          height={240}
-          priority
-          quality={90}
-          className="h-[240px] w-auto md:h-[300px] lg:h-[360px]"
-        />
+        <Logo className="h-[240px] w-auto text-charcoal md:h-[300px] lg:h-[360px]" />
       </div>
     </section>
   );
